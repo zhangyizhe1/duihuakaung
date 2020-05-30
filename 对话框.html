@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" href="duihuakuang.css">
+	</head>
+	<body>
+		<button id="button">启动对华框</button>
+	<!-- 	<div class="content">
+			<div class="header">
+				<h4>标题</h4>
+			</div>
+			<div class="body">
+				<p>主题 内容</p>
+			</div>
+			<div class="footer">
+				<button class="button btn">关闭</button>
+				<button class="button btn-l">保存</button>
+			</div>
+		</div> -->
+	</body>
+</html>
+<script src="duihuakuang.js">
+	
+</script>
+<script>
+	var obj={
+		title:"sssss",
+		content:"asdasdasd",
+		w:505,
+		shadow:true,
+		align:"top"
+	}
+	var ss = [];
+	
+	
+	button.onclick = function(){
+		ss.push(new Duixiang(obj));
+		var bi = document.getElementsByClassName("bi")[0];
+		bi.onclick=function(){
+			ss.splice(0,1);
+			console.log(ss);
+			this.parentNode.parentNode.remove()
+		}
+		// button.style.display = "none";
+	}
+</script>
